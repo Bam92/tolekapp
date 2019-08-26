@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   
-  <title>Tolekapp | a public transportation app</title>
+  <title>Tolekapp | Sign in</title>
 
 </head>
 <body>
   <div id="container">
   <header>
-    <h1 id="logo"><a href="#">Tolekapp</a></h1>
+    <h1 id="logo"><a href="../index.html">Tolekapp</a></h1>
     <nav role="navigation">
       <ul id="main-nav">
         <li><a href="#">User</a></li>
@@ -23,23 +23,23 @@
       </ul>
     </nav>
   </header>
-<main>  
-  <div id="img-container">
-    <img src="./images/illustration-mockups.svg" alt="illustration-mockups" id="mocks">
-  </div>
+<main role="main" id="signin-main">  
 
-  <section id="txt-container">
-    <h1>Book your trip now and travel in safe</h1>
+  <section id="form-wrapper">
+    <h1>User Login</h1>
 
-    <p>
-      Huddle re-imagines the way we build communities. You have a voice, 
-      but so does your audience. Create connections with your users as you 
-      engage in genuine discussion. 
-    </p>
+    <form action="#" id="sign-in">
+      <input type="email" placeholder="you@domaine.com" id="email" required>
+      <div id="helpEmail" class="inputError"></div>
+      <input type="password" placeholder="password" id="password">
+      <div id="helpPassword" class="inputError"></div>
 
-    <button id="register-button">
-        Get started
-    </button>
+      <label for="admin" id="admin-connect">
+        <input type="checkbox" name="admin"> I am Admin
+      </label> <br>
+      <input type="submit" value="login">
+    </form>
+
   </section>
 </main>
 <div id="social-container"> <!--Use font awesome-->
