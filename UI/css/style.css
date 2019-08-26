@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap');
+
 * {
     --main-bg-color: hsl(257, 40%, 49%);
     --headings-font: "Poppins", sans-serif;
@@ -39,7 +41,8 @@ header,
     display: flex;
 }
 
-header, h1 {
+header, 
+h1 {
     font-family: var(--headings-font);
 }
 
@@ -170,10 +173,6 @@ p {
         font-size: 1em;
       }
     
-    #logo-container {
-        width: 85%;
-      }
-    
     main {
         flex-direction: column;
         align-content: center;
@@ -211,6 +210,11 @@ p {
     #txt-container {
         padding: 0;
         max-width: 100vw;
+    }
+
+    /* --- sign in --- */
+    #form-wrapper {
+        width: 90vw;
     }
 
 }
@@ -278,4 +282,45 @@ p {
         margin: 5vh;
     }
 
+}
+
+/* --- Signin form --- */
+
+#signin-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-wrapper {
+    border: 1px solid hsl(257, 40%, 49%);
+    background: hsla(0,0%,100%,.3);
+    border-radius: 2px;
+    padding: 3em;
+    text-align: center;
+    width: 30vw;
+}
+
+input[type=email], 
+input[type=password],
+input[type=submit] {
+    width: 100%;
+    border-radius: 5px;
+    padding: .99em;
+    margin-bottom: .9em;
+}
+
+input[type=submit] {
+    text-transform: uppercase;
+    background: #fff;
+}
+
+input[type=submit]:hover {
+    color: #fff;
+    background: hsl(257, 40%, 49%);
+}
+
+input[type=checkbox] {
+    
+    margin-bottom: .9em;
 }
