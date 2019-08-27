@@ -303,7 +303,8 @@ p {
 
 input[type=email], 
 input[type=password],
-input[type=submit] {
+input[type=submit],
+input[type=text] {
     width: 100%;
     border-radius: 5px;
     padding: .99em;
