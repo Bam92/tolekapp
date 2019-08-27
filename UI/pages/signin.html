@@ -10,30 +10,27 @@
   <title>Tolekapp | Sign in</title>
 
 </head>
-<body>
-  <div id="container">
+<body class="main-background">
+  <div class="container">
   <header>
     <h1 id="logo"><a href="../index.html">Tolekapp</a></h1>
     <nav role="navigation">
       <ul id="main-nav">
-        <li><a href="#">User</a></li>
-        <li><a href="#">Admin</a></li>
+        <li><a href="./dashboard.html">User</a></li>
+        <li><a href="./dashboard.html">Admin</a></li>
         <li><a href="./signin.html">Login</a></li>
         <li><a href="./signup.html">Register</a></li>
       </ul>
     </nav>
   </header>
-<main role="main" id="signin-main">  
-
+<main role="main" class="auth-main">  
   <section id="form-wrapper">
     <h1>User Login</h1>
-
-    <form action="#" id="sign-in">
+    <form action="#" class="auth-form">
       <input type="email" placeholder="Enter your email" id="email" required>
       <div id="helpEmail" class="inputError"></div>
       <input type="password" placeholder="Enter your password" id="password">
       <div id="helpPassword" class="inputError"></div>
-
       <label for="admin" id="admin-connect">
         <input type="checkbox" name="admin"> I am Admin
       </label> <br>
