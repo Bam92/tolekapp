@@ -74,7 +74,7 @@ header {
 
 main {
     display: flex;
-    margin-top: 4%;
+    margin-top: 2.5%;
 }
 
 #img-container img {
@@ -162,7 +162,7 @@ p {
     border: 1px solid var(--main-bg-color);
     background: hsla(0,0%,100%,.3);
     border-radius: 2px;
-    padding: 3em;
+    padding: 2em;
     text-align: center;
     width: 30vw;
 }
@@ -223,16 +223,19 @@ input[type=checkbox] {
     color: blueviolet;
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
+.dash-footer {
     background-color: var(--main-bg-color);
-    color: #fff;
-    justify-content: space-between;
-    align-items: baseline;
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+.dash-footer, .front-footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .social:hover {
